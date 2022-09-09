@@ -22,21 +22,25 @@ namespace LocalApi.Controllers
 
     // GET: api/Locals
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Local>>> Get(string blerb, string location, string country, int minimumRating)
+    public async Task<ActionResult<IEnumerable<Local>>> Get(string name, string location, string cuisine, string blerb, int minimumRating)
     {
       IQueryable<Local> query = _db.Locals.AsQueryable();
 
-      if (blerb != null)
+      if (name != null)
       {
-        query = query.Where(entry => entry.Blerb == blerb);
+        query = query.Where(entry => entry.Name == name);
       }
       if (location != null)
       {
         query = query.Where(entry => entry.Location == location);
       }
-      if (country != null)
+      if (cuisine != null)
       {
-        query = query.Where(entry => entry.Country == country);
+        query = query.Where(entry => entry.Cuisine == cuisine);
+      }
+      if (blerb != null)
+      {
+        query = query.Where(entry => entry.Blerb == blerb);
       }
       if (minimumRating > 0)
       {

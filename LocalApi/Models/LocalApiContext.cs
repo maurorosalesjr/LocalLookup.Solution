@@ -13,7 +13,7 @@ namespace LocalApi.Models
         {
           builder.Entity<Local>()
               .HasData(
-                  new Local { LocalId = 1, Name = "Mama Dut" Location = "1414 SE Morrison St, Portland OR, 97214", Cuisine = "Vietnamese", Blerb = "Vietnamese food, hands down the best. From their boa to the Banh Mi, Mama Dut has some of the best food in town", Rating = 10 },
+                  new Local { LocalId = 1, Name = "Mama Dut", Location = "1414 SE Morrison St, Portland OR, 97214", Cuisine = "Vietnamese", Blerb = "Vietnamese food, hands down the best. From their boa to the Banh Mi, Mama Dut has some of the best food in town", Rating = 10 },
                   new Local { LocalId = 2, Name = "Vegan Junk Food", Location = "5052 SE Foster Rd, Portland Or, 97206", Cuisine = "American Classic", Blerb = "This restuarant is whack AF. Food is over salted, under seasoned and overly greasy. Their Insta pics look like someone made sick between two burger buns and decided to post it", Rating = 1 },
                   new Local { LocalId = 3, Name = "Mirisata", Location = "2420 SE Belmont st, Portland Or, 97214", Cuisine = "Sri Lanken", Blerb = "As far as i know, the only Sri Lanken restaraunt in Portland, making them the best. Employee owned with great food. food is spicy, so not for the weak willed", Rating = 8 },
                   new Local { LocalId = 4, Name = "Mis Tacones", Location = "1670 NE Killinsworth st, Portland OR, 97211", Cuisine = "Tex/Mex", Blerb = "the best vegan texmex in town. Queer owned, all welcoming. Food is out of this world delicious with TexMex Classics like the California Burrito, Chimichangas, nachoes, and the list goes on. a must stop", Rating = 10 },

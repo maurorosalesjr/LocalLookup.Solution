@@ -35,6 +35,22 @@ namespace LocalApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LocalApi", Version = "v1" });
             });
+
+            services.AddSwaggerDocument(config =>
+            {
+                config.PostProcess = document =>
+                {
+                    document.Info.Version = "v1";
+                    document.Info.Title = "Local Vegan Restaraunt Api";
+                    document.Info.Description = "An API that lists local all vegan restaraunts.";
+                    document.Info.Contact = new NSwag.OpenApiContact
+                    {
+                        Name = "Mauro Rosales",
+                        Email = "mauro.rosales247@gmail.com",
+                        Url = "https://github.com/maurorosalesjr"
+                    };
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

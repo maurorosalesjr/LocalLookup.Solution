@@ -38,26 +38,24 @@ API for Vegan Restaurants in Portland OR
 ## Swagger Documentation
 Once you've copy and posted http://localhost:5003/swagger into your browser, you can use Swagger to Get, Post, Put and Delete.
 Http Request Structure:
-* Get /api/Locals
-* Post /api/Locals
-* Get /api/Locals/{id}
-* Put /api/Locals/{id}
-* Delete /api/Locals/{id}
+* Get: /api/Locals
+* Post: /api/Locals
+* Get: /api/Locals/{id}
+* Put: /api/Locals/{id}
+* Delete: /api/Locals/{id}
 
 ### Sample query:
 http://localhost:5003/api/Locals?cuisine=HotDog
 
 ### Sample response
-[
-  {
+
     "localId": 10,
     "name": "Cutie Buys",
     "location": "4138 SE 42nd Ave, Portland OR 97206",
     "cuisine": "HotDog",
     "blerb": "this is a little different, since it is mostly an all vegan grocer, but they do sell and make fresh hotdogs",
     "rating": 9
-  }
-]
+ 
 
 ## Known Bugs
 

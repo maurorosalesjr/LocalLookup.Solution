@@ -41,7 +41,7 @@ namespace LocalApi
                 config.PostProcess = document =>
                 {
                     document.Info.Version = "v1";
-                    document.Info.Title = "Local Vegan Restaraunt Api";
+                    document.Info.Title = "Local Vegan Restaurant Api";
                     document.Info.Description = "An API that lists local all vegan restaraunts.";
                     document.Info.Contact = new NSwag.OpenApiContact
                     {

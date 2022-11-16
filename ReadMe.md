@@ -4,6 +4,8 @@
 
 #### enables user to look up/add/edit/delete/rate vegan restaurants in the Portland Metro Area
 
+New Branch Alert: a new BRANCH has been created SQLQueries. This branch has a file to use SQL queries on this API
+
 ## Technologies Used
 
 * MySQL/Workbench
